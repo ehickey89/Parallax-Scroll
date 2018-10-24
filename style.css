@@ -1,0 +1,221 @@
+/*general styles*/
+body, html{
+  height:100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto Slab', serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    .grid ul li{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-self: center;
+    }
+    
+}
+
+/*Navigation*/
+.navbar {
+    font-family: 'Roboto Slab', serif;
+}
+
+nav.scroll {
+    background-color: #005B68;
+    transition: 0.3s;
+}
+
+/*Images*/
+
+.image1 {
+    background-image: url('public/images/eyes.jpg');
+    min-height: 100%;
+}
+
+.image2 {
+    background-image: url('public/images/chart3.jpg');
+    min-height: 100%;
+}
+
+.image3 {
+    background-image: url('public/images/glasses-rack3.jpg');
+    min-height: 100%;
+}
+
+.image4 {
+    background-image: url('public/images/woman-glasses2.jpg');
+    min-height: 100%;
+}
+
+.image1, .image2, .image3, .image4{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+@media(max-width:568px){
+    .image1, .image2, .image3, .image4{
+      background-attachment:scroll;
+    }
+  }
+
+div.text {
+    display: flex;
+    color: #fff;
+    border: none;
+    text-align: center;
+    padding-top: 550px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+#services {
+    background-color: #005B68;
+    color: #fff;
+    padding: 30px;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+
+div.lenses li {
+    width: 25%;
+    float: left;
+}
+
+h4 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* patient*/
+#new-patients {
+    color: #005B68;
+    padding: 20px;
+}
+
+.forms {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+i {
+    color: #ffff00;
+    padding-bottom: 15px;
+    
+}
+
+i:hover {
+    color: #f4eb42 ;
+}
+
+.insurance {
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 200px;
+    padding-left: 200px;
+
+}
+/* Team*/
+#team {
+    background-color: #019aaf;
+    color: #fff;
+    text-align: center;
+}
+
+#team ul {
+    list-style: none; 
+    display: flex;
+    flex-direction: row;
+}
+
+#team li {
+    padding: 15px;
+}
+
+.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.grid li img {
+    height: 200px;
+    width: 175px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 15px 10px;
+    border: 5px #fff solid;
+}
+
+/* contact*/
+#contact {
+    background-color: #005B68;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    text-align: center;
+    padding-right: 225px;
+    padding-left: 20px;
+    
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+div.hours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.hours ul li {
+    list-style: none;
+}
+/*Footer*/
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#005B68;
+    color: white;
+    text-align: center;
+}
+
+.disclosures {
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+#footer-info {
+    background-color:	#005B68;
+    color: white;
+    padding: 10px;
+}
